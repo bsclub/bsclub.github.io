@@ -1,0 +1,315 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+@font-face {
+    font-family: "Capitalis";
+    src: url("Fonts/Capitalis.ttf");
+}
+@font-face {
+    font-family: "Romanica";
+    src: url("Fonts/Romanica.ttf");
+}
+.col-md-12{
+    position: relative;
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+body, html {
+  position: relative;
+}
+header {
+  padding-right: 10%;
+  padding-left: 10%;
+    font-size: 1.5rem;
+    font-family: "Capitalis", sans-serif;
+    color: #ffffff;
+    height: 490px;
+    width: 100%;
+    background-image: url(Images/olv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    }
+.kleineletter{
+  font-size: 1rem;
+}
+h2:hover{
+  transform: translateX(-5%);
+  transition: 0.7s ease;
+}
+h4:hover{
+  background-color: #dd6300;
+  transform: translateX(-5%);
+  color: white;
+  transform: scale(1.25);
+  transition: 0.7s ease;
+}
+body {
+  background-color: #c05803;
+  font-size: 1.25rem;
+  font-family: "Romanica", sans-serif;
+  color: #000000;
+}
+footer{
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 25px;
+  color: white;
+}
+footer img {
+  text-align: right;
+  position: absolute;
+  left:60%;
+  visibility: hidden;
+}
+footer.foeter {
+    position: relative;
+    bottom: -5rem;
+    height: 150px;
+    margin-top: 50px;
+    padding: 1.2rem 1rem;
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+    background-color: #454d55;
+    border-radius: 0px;
+}
+main {
+  margin-top: 2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-bottom: 0rem;
+}
+
+h1 a{
+  color: white;
+}
+.badge-secondary{
+  background-color: #454d55;
+}
+.progress{
+  background-color: lightgray;
+}
+.container{
+  max-width: 2560px;
+}
+/*==================================================================
+[ Textevenementen ]*/
+p.grey{
+  color: #454d55;
+  /*text-indent: 50px;*/
+  box-sizing: content-box ;
+}
+.first-letter {
+  font-size: 35px;
+  line-height: 70px;
+}
+span.textcolor{
+  color: white;
+}
+  /*==================================================================
+[ NAVBAR ]*/
+nav ul {display: inline;} 
+nav ul li {display: inline;}
+#navbar a { 
+  text-align: right;
+  display: inline-flex;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  font-family: "Capitalis", sans-serif;
+  }
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scale(1.25);
+  }
+.bsmain{  
+  padding: 30px;
+  }
+.bsmain a:hover{
+  color: black;
+  text-decoration: none;
+  }
+/*==================================================================
+[ Cuntainer Presidium ]*/
+div#centercunt{
+  overflow: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cuntainer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 18rem;
+  height: 5rem;
+  text-align: center;
+}
+#Presidium article {
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem;
+  color: white;
+  background-color: #454d55;
+  text-align: center;
+}
+#Presidium img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+}
+.cuntainer {
+  position: relative;
+  width: 18rem;
+  outline-color: black;
+  outline: black solid 5px;
+  }
+.cuntainer img {
+  border-top: black solid 5px; 
+}
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: #454d555d;
+  overflow: hidden;
+  width: 18rem;
+  height: 18rem;
+  transform: scale(0);
+  transition: 0.7s ease;
+  }
+.cuntainer:hover .overlay {
+  transform: scale(1);
+  }
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+  /*==================================================================
+[ Form ]*/
+.box {
+  display: flex;
+  align-items:center;
+}
+  /*==================================================================
+[ Lijst ]*/
+#Leden ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+ol ul{
+  list-style-type: none;
+}
+ol{
+  color: white;
+}
+#Leden li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#Leden li a:hover {
+  background-color: #111111;
+}
+.Ledenlijsenhunstatuut{
+  text-align: center;
+  list-style-position: inside;
+  color: black;
+}
+#bronnen ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+#bronnen ul a{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: right;
+  display: inline-flex;
+  color: white;
+}
+#bronnen li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+main.register{
+  margin-top: 3rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 0rem;
+}
+a {
+  color: #454d55;
+}
+
+/*==================================================================
+[ form ]*/
+.custom-control-input.is-invalid~.custom-control-label, .was-validated .custom-control-input:invalid~.custom-control-label {
+  color: red;
+}
+.invalid-feedback {
+  color: red;
+}
+fieldset{
+  outline-color: black;
+  outline: black solid 4px;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+legend{
+ color: white;
+ padding-top: 1rem;
+}
+
+#vlaams{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+img#vlaams:hover{
+  transform: scale(1.35);
+  transition: 0.7s ease;
+}
+/*==================================================================
+[ table ]*/
+table a{
+  color: #c05803;
+}
+thead.top{
+  background-color: #454d55;
+  border-color: white;
+  font-weight: 300;
+}
+.table-dark.table-bordered {
+  margin-bottom: 5rem;
+}
+#Activiteiten article{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+  <html lang="nl-be">
+  <head>
+    <title>BSClub Inschrijving</title>
+    <link rel="shortcut icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <meta name="keywords" content="Studenten club gent,">
+    <meta charset='utf-8'>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h1 class="bsmain"><a href="./index.html">Broeders Studenten Club</a></h1>
+            <section id="navbar">
+            <nav class="nav nav-pills">
+              <div>
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#DeBSClub">Informatie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Activiteiten">Activiteiten</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Praesidium">Praesidium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Leden">Leden</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#Contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./register.html#aanmelden">Inschrijving</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#bronnen">Bronnen</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+          </header>
+          <main class="register">
+            <section id="aanmelden">
+              <h2>Inschrijving</h2>
+              Meldt u hier aan om lid te worden bij de Broeders Studenten Club. Of om deel te nemen aan een van onze <a href="./index.html#Activiteiten" target="_blank">evenementen</a>.
+              <p class="kleineletter"> U kunt voor uzelf zich aanmeldt onze  <a href="#privacy">servicevoorwaarden</a> snel doorlezen, deze zijn heel kort</p>
+              <form class="form-horizontal" action="https://formspree.io/xrgkkrzd" method="POST" autocomplete="off">
+                <fieldset>
+                <legend>Personalia:</legend>
+                  <div class="row">
+                    <div class="col">
+                      <label for="voornaam"></label><br>
+                      <input type="text" class="form-control" placeholder="Voornaam" id="voornaam" name="Voornaam" size="10" required> *verplicht <br>
+                    </div>
+                    <div class="col">    
+                      <label for="naam"></label><br>
+                      <input type="text" class="form-control" id="naam" placeholder="Achternaam" name="Naam" size="20" required> *verplicht
+                    </div>
+                  </div>
+                    <div class="form-group">
+                      <label for="vlaamsequote">Wat is jouw favoriete vlaamse spreuk?</label><br>
+                      <textarea name="quote" class="form-control" id="vlaamsequote" cols="50" rows="2"></textarea>
+                    </div>
+                    <div>
+                      Gender:
+                        <label for="vrouw"></label>
+                        <input id="vrouw" name="vrouw" type="radio">Vrouw
+                        <label for="man"></label>
+                        <input id="man" name="man" type="radio">Man
+                        <label for="andere"></label>
+                        <input id="andere" name="andere" type="radio">Andere:
+                        <label for="anderetext"></label>
+                        <div class="col"><textarea class="form-control" name="anderetext:" id="anderetext" cols="6" rows="1"></textarea></div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Jouw contact informatie:</legend>
+                      <div class="form-group">
+                        <label for="email">email:</label>
+                        <input type="text" id="email" class="form-control" name="_replyto" size="30" required> *verplicht
+                      </div>
+                      <div class="form-group">
+                        <label for="landphone">Telefoon:</label>
+                        <input type="tel" name="land" id="landphone" placeholder="32" pattern="[0-9]{2}" size="3" maxlength="2">
+                        <label for="telefoon">:</label>
+                        <input type="tel" id="telefoon" name="phone" placeholder="4 71 17 93 07" pattern="[0-9]{9}" maxlength="9">
+                      </div>
+                      <div class="form-row">Kot(huis)adres
+                        <div class="col">
+                          <input type="text" class="form-control"  name="straat" id="straat" placeholder="straat" size="15">
+                        </div>
+                        <div class="col">
+                          <input type="tel" class="form-control"  name="nummer" id="huisnummer" placeholder="nummer" pattern="[0-9]" maxlength="6" size="6">
+                        </div>
+                        <div class="col">
+                          <input type="tel" class="form-control"  id="postcode" placeholder="postcode"  pattern="[0-9]{4}" size="7">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control"  id="stad" placeholder="Stad" name="stad" size="4">
+                        </div>
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Academische achtergrond</legend>
+                      <div>
+                        <label for="typeinschr">Type Inschrijving:</label>
+                        <select class="form-control" id="typeinschr" name="typeisnchr">
+                          <option value="oudllbs">Ik ben Oudleerling van de broederschool</option>
+                          <option value="oudllsn">Ik heb in Sint-Niklaas gestudeerd</option>
+                          <option value="other">Andere</option>
+                        </select>
+                      </div>
+                      <div>
+                          <label for="richtingsec">Richting secundair:</label>
+                          <select class="form-control" id="richtingsec" name="richtingsecundair">
+                               <option value="WEW6">wetenschappen - wiskunde (WEW6)</option>
+                               <option value="WEW8">wetenschappen - wiskunde (WEW8)</option>
+                               <option value="LW">Latijn - wiskunde (LW)</option>
+                               <option value="LMT">Latijn - moderne talen (LMT)</option>
+                               <option value="EMT">economie - moderne talen (EMT)</option>
+                               <option value="EW">economie - wiskunde (EW)</option>
+                               <option value="EWE">economie - wetenschappen (EWE)</option>
+                               <option value="MTWE">moderne talen - wetenschappen (MTWE)</option>
+                               <option value="MTW">moderne talen - wiskunde (MTW)</option>
+                               <option value="other">Andere</option>
+                          </select>
+                          *Enkel voor oudleerlingen.
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Inschrijving evenement</legend>
+                      <div class="form-group">
+                        Indien u naar een van onze <a href="./index.html#Activiteiten" target="_blank">evenementen</a> te komen geef dit dan aan. 
+                        <br>
+                        <label for="croquemonsieur"></label>
+                        <input type="checkbox" id="croquemonsieur" name="croque">
+                        <a href="./index.html#croque" target="_blank">Croque monsieur all you can eat</a> (12/3/2020)<br>
+                        <label for="cocktailavond"></label>
+                        <input type="checkbox" id="cocktailavond" name="cocktail">
+                        <a href="./index.html#cocktailavond" target="_blank">Cocktailavond</a> (16/3/2020)<br>
+                        <label for="familiecantus"></label>
+                        <input type="checkbox" id="familiecantus" name="cantus">
+                        <a href="./index.html#familiecantus" target="_blank">Familiecantus</a> (12/3/2020)<br>
+                      </div>
+                  </fieldset>
+                  <fieldset class="was-validated">
+                    <legend>Afronden</legend>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="voorwaarden" required>
+                        <label class="custom-control-label" for="voorwaarden">Ik ga akkoord met de servicevoorwaarden</label>
+                        <div class="invalid-feedback">De voorwaarden staan onder <a href="#privacy">Bescherming van privacy:</a></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                          <input type="hidden" name="_next" value="./index.html"/>
+                          <input type="submit" class="btn btn-primary" value="Registreer">
+                          <input type="reset" value="reset" class="btn btn-primary"> 
+                    </div>
+                  </fieldset>
+                </form>
+              <p class="kleineletter">
+                Indien u terug wilt gaan zonder zich aan te melden klik <a href="./index.html#MainPage">hier</a>.
+              </p>
+            </section>
+            <section id="privacy">
+              <h2>Bescherming van privacy:</h2>
+              Alle gegevens die verzameld worden via het <a href="#aanmelden">register</a> zijn vertrouwelijk en worden dus niet gedeeld.
+              Dit houdt dus in dat deze gegevens enkel binnen de organistatie BroedersStudentClub kunnen worden gebruikt en verwerkt. Uw data is dus beschremd 
+              en zal niet worden misbruikt.
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <footer class="foeter">
+        <h4>Broeders Studenten Club</h4>
+        <h5>Ongeconfirmeerde deelorganisatie van de Broederschool</h5>
+        <h6>Made at 05/03/2020</h6>
+        <h6>&copy; Industrieel-info-clubs</h6>
+    </footer>
+  </body>
+  </html>
